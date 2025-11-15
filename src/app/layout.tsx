@@ -6,7 +6,7 @@ import { fontSans, fontSansOutline } from "~/styles/fonts";
 
 import { Header } from "~/app/_components/layout/Header";
 import { Footer } from "~/app/_components/layout/Footer";
-import { Main } from "./_components/layout/Main";
+import { Main } from "~/app/_components/layout/Main";
 
 export const metadata: Metadata = {
   title: "adri-web-site",
@@ -25,9 +25,7 @@ export default function RootLayout({
       <body className="relative h-full">
         <Header />
         <TRPCReactProvider>
-          <Main>
-            <div className="flex h-full w-max">{children}</div>
-          </Main>
+          <Main>{children}</Main>
         </TRPCReactProvider>
         <Footer />
       </body>

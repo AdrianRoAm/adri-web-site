@@ -1,19 +1,28 @@
 @import "tailwindcss";
 
 @theme {
+  --font-family-sans: var(--font-sans), sans-serif;
+  --font-family-outline: var(--font-sans-outline), sans-serif;
 
+  --font-size-fluid-hero: clamp(4rem, 15vw, 16rem);
 }
-@layer utilities {
 
+/* Utilidades personalizadas */
+@layer utilities {
   .no-scrollbar {
-    
     scrollbar-width: none;
-    
     -ms-overflow-style: none;
   }
-
   .no-scrollbar::-webkit-scrollbar {
-    
     display: none;
+  }
+
+  .font-outline {
+    font-family: var(--font-family-outline);
+  }
+
+  .text-fluid-hero {
+    font-size: var(--font-size-fluid-hero);
+    line-height: 1;
   }
 }
