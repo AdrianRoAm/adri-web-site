@@ -2,7 +2,7 @@
 
 import { type RefObject, useEffect, useRef } from "react";
 
-const LERP_FACTOR = 0.05; // este valor relentiaza la parada
+const LERP_FACTOR = 0.07; // este valor relentiaza la parada
 const STOP_THRESHOLD = 0.1;
 
 export function useHorizontalScroll(ref: RefObject<HTMLElement | null>) {
